@@ -1,0 +1,10 @@
+<div class="container" style="padding-top: 120px;">
+    <p>HTML Designer!</p>
+    
+    <div [innerHtml]="htmlInput | safeHtml"></div>
+    <div>
+        <textarea type="text" class="form-control w-100"
+            nz-input placeholder="Type your HTML here!" 
+            [(ngModel)]="htmlInput" rows="20"></textarea>
+    </div>    
+</div>
